@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Box -->
+    <View
+        android:id="@+id/box"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/holo_blue_light" />
+
+    <!-- Up Arrow -->
+    <Button
+        android:id="@+id/btn_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/box"
+        android:layout_centerHorizontal="true"
+        android:text="Up" />
+
+    <!-- Down Arrow -->
+    <Button
+        android:id="@+id/btn_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/box"
+        android:layout_centerHorizontal="true"
+        android:text="Down" />
+
+    <!-- Left Arrow -->
+    <Button
+        android:id="@+id/btn_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/box"
+        android:text="Left" />
+
+    <!-- Right Arrow -->
+    <Button
+        android:id="@+id/btn_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/box"
+        android:text="Right" />
+</RelativeLayout>
